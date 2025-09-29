@@ -1,0 +1,25 @@
+# 0-installation-script
+
+# Step 1: (Optional) Install Node Version 20.16 using NVM on Ubuntu
+# ---------------------------------------------------------------
+# 1. Download and run the NVM install script
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+# 2. Exit the terminal
+exit
+
+# 3. Reopen the terminal to apply NVM changes
+
+# 4. Install Node.js version 20.16 using NVM
+nvm install 20.16
+nvm use 20.16
+node -v   # Verify installation
+npm -v    # Verify npm installation
+
+# Step 2: Install SASS (Works on any system with Node.js installed)
+# ---------------------------------------------------------------
+# Install a specific version of SASS (3.7.4)
+npm install sass@3.7.4
+
+# Step 3: Verify SASS installation
+npx sass --version
